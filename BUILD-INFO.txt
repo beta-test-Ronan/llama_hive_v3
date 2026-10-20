@@ -1,0 +1,13 @@
+llama-hive-v3 realtime experimental build
+llama.cpp commit: 3bb63cbcbfb62056c84fe9e521b0f3d756d29c32
+architecture: Linux aarch64
+model: Gemma 3 1B Instruct Q4_K_M (not included)
+KV type in benchmark: Q8_0 for K and V
+mode: one token per worker per tick
+logical worker budget: 128 tokens
+pipeline metadata: planner -> critic -> synthesizer
+final worker: n_workers - 1; punctuation normalization enabled
+handoff: compact 128-D metadata, no automatic textual prompt injection
+benchmark: question about the capital of Brazil, n_predict=8, workers=1/8/32/200
+result: aggregate throughput approximately 5.22 tok/s at 1 worker and 10.53 tok/s at 200 workers
+limitation: EOG can stop workers early; benchmark measures scheduler throughput, not semantic quality

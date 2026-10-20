@@ -1,0 +1,28 @@
+===== workers=1 =====
+0.01.243.958 I hive: workers=1, prompt_tokens=16, n_ctx=256, n_batch=256, n_ubatch=32
+0.01.243.972 I hive-v3: one-token-per-tick, logical_lane_ctx=128, unified_physical_ctx=256
+0.03.872.247 I hive: generated 8 tokens in 1.533 s (5.22 tok/s)
+0.03.872.262 I hive: active workers at end: 1/1
+0.03.872.262 I hive-v3: task handoffs=8, roles=planner/critic/synthesizer
+[Worker 0 / final]: 
+===== workers=8 =====
+0.00.646.300 I hive: workers=8, prompt_tokens=16, n_ctx=256, n_batch=256, n_ubatch=32
+0.00.646.313 I hive-v3: one-token-per-tick, logical_lane_ctx=128, unified_physical_ctx=256
+0.07.500.903 I hive: generated 60 tokens in 5.758 s (10.42 tok/s)
+0.07.500.918 I hive: active workers at end: 6/8
+0.07.500.919 I hive-v3: task handoffs=60, roles=planner/critic/synthesizer
+[Worker 7 / final]: 
+===== workers=32 =====
+0.00.724.210 I hive: workers=32, prompt_tokens=16, n_ctx=512, n_batch=256, n_ubatch=32
+0.00.724.225 I hive-v3: one-token-per-tick, logical_lane_ctx=128, unified_physical_ctx=512
+0.21.339.782 I hive: generated 205 tokens in 19.514 s (10.51 tok/s)
+0.21.339.798 I hive: active workers at end: 19/32
+0.21.339.799 I hive-v3: task handoffs=205, roles=planner/critic/synthesizer
+[Worker 31 / final]: 
+===== workers=200 =====
+0.00.751.681 I hive: workers=200, prompt_tokens=16, n_ctx=1792, n_batch=256, n_ubatch=32
+0.00.751.696 I hive-v3: one-token-per-tick, logical_lane_ctx=128, unified_physical_ctx=1792
+2.01.891.950 I hive: generated 1264 tokens in 120.037 s (10.53 tok/s)
+2.01.891.964 I hive: active workers at end: 111/200
+2.01.891.965 I hive-v3: task handoffs=1264, roles=planner/critic/synthesizer
+[Worker 199 / final]: 
